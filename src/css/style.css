@@ -19,11 +19,13 @@ nav{
 .container {
   display: flex;
   justify-content: space-between;
+  
 }
 
 .header__nav{
   padding-top: 12px;
   display: flex;
+  
 }
 
 .header__nav-logo:hover{
@@ -45,6 +47,7 @@ nav{
   display: flex;
   align-items: center;
   gap: 36px;
+  
 }
 
 .header__nav-item-link{
@@ -122,11 +125,15 @@ nav{
   transition: all 0.7s;
 }
 
+.respo_burger-menu{
+  display: none;
+}
 
 /* =================================== SECTION_ONE ===================================  */
 
 .section__items{
   display: flex;
+  align-items: center;
   padding-top: 100px;
   width: 1280px;
   margin: 0 auto;
@@ -171,10 +178,13 @@ nav{
   width: 1020px;
   margin: 0 auto;
   padding-top: 82px;
+  flex-wrap: wrap;
+  
 }
 
-.section__partners-items a{
+.section__partners-item{
   padding: 50px;
+  width: 50%;
 }
 
 .section__partners-item img:hover{
@@ -187,11 +197,10 @@ nav{
 
 .section__detailed{
   padding-top: 150px;
+  flex-wrap: wrap;
 }
 
-.section__items{
-  align-items: center;
-}
+
 
 .section__item-titles{
   padding-left: 300px;
@@ -239,11 +248,9 @@ nav{
 .section__creative-items {
   display: flex;
   align-items: center;
+  
 }
 
-.section__creative-item-titles{
-  padding-left: 180px;
-}
 
 .section__item-img img{
   width: 600px;
@@ -264,6 +271,7 @@ nav{
   padding-top: 100px;
   width: 1280px;
   margin: 0 auto;
+  
 }
 
 .section__professional-item-titles{
@@ -304,6 +312,7 @@ nav{
 .section__choose-row-flex{
   display: flex;
   align-items: center;
+  
 }
 
 .section__choose-title h1{
@@ -411,7 +420,7 @@ nav{
 .section__choose-title29{
   display: flex;
   align-items: baseline;
-  justify-content:center
+  justify-content:center  
 }
 
  .choose-title29{
@@ -540,6 +549,7 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 .sec__forum-title {
   font-style: normal;
@@ -558,6 +568,8 @@ nav{
   display: flex;
   justify-content: center;
   align-items: center;
+  
+
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
@@ -575,6 +587,7 @@ nav{
 .sec__forum_rows{
   margin-top: 90px;
   display: flex;
+
 }
 
 .sec__forum-row{
@@ -641,6 +654,7 @@ nav{
   margin-top: 70px;
   width: 900px;
   height: 296px;
+
   
   background: #2F2E41;
   border-radius: 2px;
@@ -649,7 +663,7 @@ nav{
 
 .sec__container-inner{
   display: flex;
-  
+    
 }
 
 .sec__talk-container-inn {
@@ -673,6 +687,7 @@ nav{
   display: flex;
   align-items: center;
   justify-content: center;
+  
    
 
   font-family: 'Open Sans';
@@ -697,6 +712,7 @@ nav{
 
 footer{
   margin-top: 68px;
+  background: rgba(236, 235, 255, 0.9);
 }
 
 
@@ -704,8 +720,8 @@ footer{
   margin: 0 auto;
   width: 1484px;
   height: 598px;
-  background: rgba(236, 235, 255, 0.9);
 }
+
 .footer__rows {
   display: flex;
   justify-content: center;
@@ -747,6 +763,7 @@ footer{
 
 .footer__row-logos {
   display: flex;
+  
 }
 
 .footer__row-logo-img {
@@ -770,6 +787,7 @@ footer{
   margin-top: 220px;
   display: flex;
   justify-content: space-between;
+   
 }
 
 .footer_logo {
@@ -791,4 +809,81 @@ footer{
   color: #9893A3;
 }
 
+  .col__2{
+    width: 20%;
+  }
 
+
+/* =================================== RESPONSIV ===================================  */
+
+
+@media only screen and (max-width: 600px){
+  .box__lay{
+    width: 380px;
+  }
+  .container{
+    margin: 20px;
+  }
+  .header__nav-item-link{
+    display:none
+  }
+  .header__nav-bttn{
+    display: none;
+  }
+  .respo_burger-menu{
+    display: block;
+    margin-top: 4%;
+  }
+  .section__items{
+    flex-direction: column;
+    width: 100%;
+  }
+  .section__item-title h1{ 
+    font-size: 52px;
+    line-height: 50px;
+    padding: 0;
+    margin-top: -15%;
+  }
+  .section__item-text{
+    margin-top: -10%;
+    width: 380px;
+    height: 102px;
+    font-size: 20px;
+    line-height: 34px;
+  }
+  .section__item-text p{
+    font-size: 18px;
+    line-height: 34px;
+  }
+  .section__item-bttn{
+    margin-left: 6%;
+  }
+  .section__item-img img{
+    width: 360px;
+    padding-left: 10%;
+  }
+  .section__partners-item{
+    padding: 0;
+  }
+  .section__partners{
+    padding: 0;
+    margin-top: -12%;
+  }
+  .section__partners-item img{
+    width: 100%
+  }
+
+  .section__detailed{
+      margin-top: -70%;
+  }
+  .section__professional-items{
+    width: 380px;
+  }
+  .section__items{
+    width: 380px;
+  }
+  nav{
+    width: 380px;
+  }
+  
+}
